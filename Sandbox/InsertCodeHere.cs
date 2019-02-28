@@ -8,15 +8,25 @@ namespace Sandbox
         {
             // The FIRST line of code should be BELOW this line
 
-            Mad ret1 = new Mad(1, "Kyllingebryst", 120,false);
-            Mad ret2 = new Mad(2, "Kamsteg", 80, false);
+            //Mad ret1 = new Mad(1, "Kyllingebryst", 120,false);
+            //Mad ret2 = new Mad(2, "Kamsteg", 80, false);
 
 
 
-            Ordre o1 = new Ordre(10);
-            o1.AddMadTilOrdre(ret2);
-            o1.Mad = ret2; 
-            o1.ordreBeskrivelse("Din bestilling er: ");
+            //Ordre o1 = new Ordre(10);
+            //o1.AddMadTilOrdre(ret2);
+            //o1.Mad = ret2; 
+            //o1.ordreBeskrivelse("Din bestilling er: ");
+
+
+            Drik d1 = new Drik();
+            Drik d2 = new Drik( "Øl", 45.5, 33);
+            d1.Navn = "Cola";
+            d1.Size = 44.5;
+
+            Console.WriteLine(d1.Navn);
+            d1.GivInfo();
+            d2.GivInfo();
 
             // The LAST line of code should be ABOVE this line
         }
