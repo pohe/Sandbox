@@ -11,12 +11,27 @@ namespace Sandbox
         private int _ordreNummer;
         private double _pris;
         private bool _allergener;
-        private Mad _mad1; 
+        private Mad _mad1;
+
+        private Drik _drik;
+
+        public Drik Drik
+        {
+            get { return _drik; }
+            set { _drik = value; }
+        }
+
+        public Kunde Kunde { get; set; }
 
         public Ordre(int ordreNummer)
         {
             _ordreNummer = ordreNummer;
-            //_pris = pris;
+            
+        }
+
+        public void AddDrikTilOrdre(Drik d)
+        {
+            _drik = d;
         }
 
         public void AddMadTilOrdre(Mad m1)

@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace Sandbox
 {
-    class Kunde
+    public class Kunde
     {
+        public string Name { get; set; }
+        public string Mobilnr { get; set; }
+
+        public Kunde(string name, string mobilnr)
+        {
+            Name = name;
+            Mobilnr = mobilnr;
+        }
+
+
     }
 }
