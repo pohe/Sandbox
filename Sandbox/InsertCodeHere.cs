@@ -33,6 +33,11 @@ namespace Sandbox
             d1.GivInfo();
             d2.GivInfo();
 
+
+            Ordre newO = new Ordre(2);
+            newO.AddMadTilOrdre(ret1);
+            newO.AddDrikTilOrdre(d2);
+
             // The LAST line of code should be ABOVE this line
         }
     }

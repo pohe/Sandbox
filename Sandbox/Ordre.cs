@@ -10,7 +10,6 @@ namespace Sandbox
     {
         private int _ordreNummer;
         private double _pris;
-        private bool _allergener;
         private Mad _mad1;
 
         private Drik _drik;
@@ -56,10 +55,7 @@ namespace Sandbox
             get { return _pris; }
             set { _pris = value; }
         }
-        public bool allergener
-        {
-            get { return _allergener; }
-        }
+        
 
 
         public void ordreBeskrivelse(string bestilling)
