@@ -11,6 +11,7 @@ namespace Sandbox
         private int _ordreNummer;
         private double _pris;
         private Mad _mad1;
+        private Mad _mad2;
 
         private Drik _drik;
 
