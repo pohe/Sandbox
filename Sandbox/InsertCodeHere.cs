@@ -23,7 +23,7 @@ namespace Sandbox
             o1.Kunde = k1; 
 
             o1.AddMadTilOrdre(ret2);
-           
+            o1.AddMadTilOrdre(ret2);
             o1.AddDrikTilOrdre(d1);
 
 

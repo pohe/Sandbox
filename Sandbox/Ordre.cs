@@ -10,16 +10,17 @@ namespace Sandbox
     {
         private int _ordreNummer;
         private double _pris;
-        private Mad _mad1;
-        private Mad _mad2;
+        //private Mad _mad1;
+        //private Mad _mad2;
+        private List<Mad> _mad;
+        private List<Drik> _drikkevarer;
+        //private Drik _drik;
 
-        private Drik _drik;
-
-        public Drik Drik
-        {
-            get { return _drik; }
-            set { _drik = value; }
-        }
+        //public Drik Drik
+        //{
+        //    get { return _drik; }
+        //    set { _drik = value; }
+        //}
 
         public Kunde Kunde { get; set; }
 
@@ -31,19 +32,20 @@ namespace Sandbox
 
         public void AddDrikTilOrdre(Drik d)
         {
-            _drik = d;
+            _drikkevarer.Add(d);
+            //_drik = d;
         }
 
         public void AddMadTilOrdre(Mad m1)
         {
-            _mad1 = m1; 
+            _mad.Add(m1);
         }
 
-        public Mad Mad
-        {
-            get { return _mad1; }
-            set { _mad1 = value;  }
-        }
+        //public Mad Mad
+        //{
+        //    get { return _mad1; }
+        //    set { _mad1 = value;  }
+        //}
 
         public int ordreNummer
         {
